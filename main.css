@@ -36,7 +36,9 @@ header p {
   height: 500px;
   text-shadow: 1px 1px 1px #000000;
 }
+
 .jumbotron h2 {
+  position: relative;
   font-size: 60px;
   font-weight: 700;
   margin: 0;
@@ -45,7 +47,8 @@ header p {
 }
 
 .jumbotron h3 {
-  margin: 0 0 20px;
+  position: relative;	
+  margin: 0;
   color: #ffffff;
   text-shadow: 2px 2px 2px #000000;
 }
@@ -56,25 +59,6 @@ section .row img {
 }
 
 .col-md-6 {
-  margin: 0 0 30px;
-}
-
-.btn.btn-primary {
-  border-radius: 2px;
-  border: 0px;
-  color: #fbd1d5;
-  text-shadow: none;
-  background-color: #ffffff;
-}
-
-.btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: #fbd1d5;
-}
-
-.btn-secondary {
-  background-color: #E8DFE0;
-  color: #ffffff;
   margin: 0 0 30px;
 }
 
@@ -105,7 +89,7 @@ footer li img {
     position:relative;
 }
 
-.textonimage{
+.textonimage {
 	position: absolute;
     margin: auto;
     top: 0;
