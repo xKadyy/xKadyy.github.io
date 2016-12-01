@@ -100,3 +100,21 @@ footer li img {
     height:100px;   
     text-shadow: 2px 2px 2px #000000;
 }
+
+.textonheader {
+	position: absolute;
+	margin: auto;
+    top: 36%;
+    left:10%;
+    color:#fff;
+    height:100px;   
+    text-shadow: 2px 2px 2px #000000;
+}
+.textonheader2 {
+	position: absolute;
+	margin: auto;
+    top: 50%;
+    left:11%;
+    color:#000;
+    height:100px;   
+}
