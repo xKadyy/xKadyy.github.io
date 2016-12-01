@@ -4,6 +4,7 @@ body {
 }
 
 header {
+  padding: 0;
 }
 
 header .row,
@@ -83,6 +84,7 @@ footer li img {
 .row{
     width: 1060px;
     height:auto;
+    margin: auto;
     text-align:center;
     position:relative;
 }
