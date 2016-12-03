@@ -3,10 +3,10 @@
 <head>
   <title>2ID60 Assignment 1</title>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="slideshow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script src="jquery.snow.js"></script>
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -23,7 +23,7 @@
       </div>
       </section>
 </head>
-<body>
+<body class="bodybackground">
 
   <section class="container">
     <div class="row">
@@ -53,5 +53,23 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 <script src="myscripts.js"></script>
+
 </body>
+<footer>
+<button type="button" id="start">Let it snow!</button>
+<p> Please note: once the snow has been turned on, it cannot be turned off. </p>
+
+<button type="button" id= "stop">Stop the snow</button>
+<p> This button removes the snow currently on the screen, it does NOT stop the snow from falling. </p>
+<script>
+$(document).ready(function(){
+    $("#start").click(function(){
+		$.fn.snow()
+    });
+    $("#stop").click(function(){
+        $("div").stop(true, true, true);
+    });
+});
+</script>
+</footer>
 </html>
