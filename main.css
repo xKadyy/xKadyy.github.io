@@ -174,3 +174,20 @@ footer li img {
 	margin-top: auto;
 	margin-bottom: auto;
 }
+
+.balkje{
+	margin-right:15%;
+}
+
+.snowbutton{
+	background-color:#FFF;
+	color:#900;
+}
+
+.slideshowbutton #previous{
+	background-image: url('http://www.clker.com/cliparts/Z/n/k/Z/y/j/left-arrow-gray-hi.png'); 
+}
+
+.slideshowbutton #next{
+	background-image: url('http://www.clker.com/cliparts/V/1/Z/A/h/U/left-arrow-right-hi.png'); 
+}
