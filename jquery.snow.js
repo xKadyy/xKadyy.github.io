@@ -19,6 +19,7 @@
 (function($){
 	
 	$.fn.snow = function(options){
+
 	
 			var $flake 			= $('<div id="flake" />').css({'position': 'absolute', 'top': '-50px'}).html('&#10052;'),
 				documentHeight 	= $(document).height(),
@@ -26,7 +27,7 @@
 				defaults		= {
 									minSize		: 10,
 									maxSize		: 20,
-									newOn		: 500,
+									newOn		: 250,
 									flakeColor	: "rgb(0, 102, 0)"
 								},
 				options			= $.extend({}, defaults, options);
@@ -64,7 +65,7 @@
 					);
 			}, options.newOn);
 			
-			  	
 	};
+	
 	
 })(jQuery);

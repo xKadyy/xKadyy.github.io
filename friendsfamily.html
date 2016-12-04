@@ -7,13 +7,25 @@
 
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="slideshow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script src="jquery.snow.js"></script>
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<font color="#000"><button type="button" id="start">Let it snow!</button></font>
 
+<a href="friendsfamily.html"><font color="#000"><button type="button" id="stop">Stop the snow</button></font></a>
+<script>
+$(document).ready(function(){
+    $("#start").click(function(){
+		$.fn.snow()
+    });
+});
+</script>
 <section class="container">
     <div class="row">
       <figure class="col-sm-12">
@@ -41,7 +53,9 @@
 	<figure class="col-sm-3">
 	</figure>
 	<figure class="col-sm-6">
-		<h1>Lorem Ipsum</h1>
+		<h1>Far away friends and family?</h1>
+        <h3>Find the prettiest Christmas cards here!</h3>
+        <br>
 	</figure>
 	<figure class="col-sm-3">
 	</figure>
@@ -56,6 +70,24 @@
       <figure class="col-sm-4">
       </figure>
     </div> 
+ <!-- slideshow 1 -->
+    <div class="row">
+      <figure class="col-sm-12" id="Slideshow">
+      <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/card1.jpg" style="width:100%">
+  <img class="mySlides" src="images/card2.jpg" style="width:100%">
+  <img class="mySlides" src="images/card3.jpg" style="width:100%">
+  <img class="mySlides" src="images/card4.jpg" style="width:100%">
+  <img class="mySlides" src="images/card5.jpg" style="width:100%">
+  <img class="mySlides" src="images/card6.jpg" style="width:100%">
+  <img class="mySlides" src="images/card7.jpg" style="width:100%">
+
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+	</div>
+      </figure>
+    </div> 
+
 <!-- line -->    
     <div class="row">
        <figure class="col-sm-4">
@@ -65,12 +97,12 @@
       </figure>
       <figure class="col-sm-4">
       </figure>
-    </div>            
+    </div> 
 </section>
 
   <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
-<script src="myjs.js"></script>
+<script src="myscripts.js"></script>
 </body>
 </html>

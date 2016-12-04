@@ -7,13 +7,23 @@
 
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="slideshow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script src="jquery.snow.js"></script>
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<font color="#000"><button type="button" id="start">Let it snow!</button></font>
 
+<a href="activities.html"><font color="#000"><button type="button" id="stop">Stop the snow</button></font></a>
+<script>
+$(document).ready(function(){
+    $("#start").click(function(){
+		$.fn.snow()
+    });
+});
+</script>
 <section class="container">
     <div class="row">
       <figure class="col-sm-12">
@@ -41,7 +51,9 @@
 	<figure class="col-sm-3">
 	</figure>
 	<figure class="col-sm-6">
-		<h1>Lorem Ipsum</h1>
+		<h1>Activities</h1>
+        <h3>What to do on and around Christmas</h3>
+        <br>
 	</figure>
 	<figure class="col-sm-3">
 	</figure>
@@ -58,11 +70,11 @@
     </div>
     <div class="row">
 <div class="dropdown">
-  <button onclick="myFunctionhim()" class="dropbtn">With friends</button>
-  <div id="Dropdownhim" class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+  <button onclick="myFunctionfriends()" class="dropbtn">With friends</button>
+  <div id="Dropdownfriends" class="dropdown-content">
+    <a href="https://www.elfster.com/secret-santa-rules/" target="secretsanta">Secret Santa</a>
+    <a href="http://www.finditnearme.co/ice-skating-near-me/" target="iceskating">Ice Skating</a>
+    <a href="http://uk.complex.com/pop-culture/2013/12/best-christmas-movies-netflix-instant-streaming/" target="moviemarathon">Movie Marathon</a>
   </div>
   </div>
   </div>
@@ -78,11 +90,11 @@
     </div>
     <div class="row">
 <div class="dropdown">
-  <button onclick="myFunctionher()" class="dropbtn">With family </button>
-  <div id="Dropdownher" class="dropdown-content">
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
+  <button onclick="myFunctionfamily()" class="dropbtn">With family </button>
+  <div id="Dropdownfamily" class="dropdown-content">
+    <a href="https://www.elfster.com/secret-santa-rules/" target="secretsanta">Secret Santa</a>
+    <a href="http://www.countryliving.co.uk/out-and-about/country-living-fairs/a171/ten-of-the-best-christmas-markets/" target="christmasmarket">Visit Christmas Markets</a>
+    <a href="menu.html">Have A Nice Dinner</a>
   </div>
 </div>
 </div>

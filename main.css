@@ -170,3 +170,7 @@ footer li img {
 .show {display:block;}
 /*end dropdownmenu */
 
+.menutext{
+	margin-top: auto;
+	margin-bottom: auto;
+}
