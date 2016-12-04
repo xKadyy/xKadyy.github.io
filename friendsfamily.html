@@ -15,10 +15,14 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<font color="#000"><button type="button" id="start">Let it snow!</button></font>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity=
+"sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<a href="friendsfamily.html"><font color="#000"><button type="button" id="stop">Stop the snow</button></font></a>
+<div class="balkje">
+<div class="container">
+<div align="right">
+<font color="#000"><button type="button" id="start" class="snowbutton">Let it snow!</button></font>
+<a href="friendsfamily.html"><font color="#000"><button type="button" id="stop" class="snowbutton">Stop the snow</button></font></a>
 <script>
 $(document).ready(function(){
     $("#start").click(function(){
@@ -26,6 +30,10 @@ $(document).ready(function(){
     });
 });
 </script>
+</div>
+</div>
+</div>
+
 <section class="container">
     <div class="row">
       <figure class="col-sm-12">
@@ -73,16 +81,15 @@ $(document).ready(function(){
  <!-- slideshow 1 -->
     <div class="row">
       <figure class="col-sm-12" id="Slideshow">
-      <div class="w3-content w3-display-container">
+      <div class="w3-content w3-display-container">      
+      <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>      
   <img class="mySlides" src="images/card1.jpg" style="width:100%">
   <img class="mySlides" src="images/card2.jpg" style="width:100%">
   <img class="mySlides" src="images/card3.jpg" style="width:100%">
   <img class="mySlides" src="images/card4.jpg" style="width:100%">
   <img class="mySlides" src="images/card5.jpg" style="width:100%">
   <img class="mySlides" src="images/card6.jpg" style="width:100%">
-  <img class="mySlides" src="images/card7.jpg" style="width:100%">
-
-  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <img class="mySlides" src="images/card7.jpg" style="width:100%">  
   <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
 	</div>
       </figure>
