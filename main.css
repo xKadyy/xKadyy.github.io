@@ -117,11 +117,7 @@ footer li img {
     height:100px;   
 }
 
-.menutext {
-	position: relative;
-	margin: auto;
-	vertical-align: middle; /*nopes*/
-}
+
 /*dropdownmenu*/
 .dropbtn {
     background-color: #B30012;
@@ -170,10 +166,10 @@ footer li img {
 .show {display:block;}
 /*end dropdownmenu */
 
-.menutext{
-	margin-top: auto;
-	margin-bottom: auto;
-}
+/*.menutext{
+	min-height: 10em;
+    vertical-align: middle;
+}*/
 
 .balkje{
 	margin-right:15%;
@@ -184,10 +180,7 @@ footer li img {
 	color:#900;
 }
 
-.slideshowbutton #previous{
-	background-image: url('http://www.clker.com/cliparts/Z/n/k/Z/y/j/left-arrow-gray-hi.png'); 
-}
-
-.slideshowbutton #next{
-	background-image: url('http://www.clker.com/cliparts/V/1/Z/A/h/U/left-arrow-right-hi.png'); 
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
